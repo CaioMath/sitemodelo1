@@ -1,0 +1,302 @@
+*{margin: 0; padding: 0;}  /* inicia todos os elementos com margin 0 e padding 0*/
+
+.container-principal{
+    font-family: 'Raleway', sans-serif;
+    color: #777;    
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color:#fff;
+    position: relative;
+    top: 0;
+}
+
+.logo{
+    position: absolute;
+    width: 300px;
+    height: auto;
+}
+
+.logo img{
+    width: 90%;
+    height: 100px;
+    margin-left: 10%;
+}
+
+nav{
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+nav ul li{
+    float: left;
+    color: #fff;
+    width: auto;
+    margin: 0.8em;
+    font-size: 1.5em;
+    font-family: 'Raleway',sans-serif;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #bbb;
+}
+nav ul li a:hover{
+    color: #b13030;
+}
+
+#banner{
+    width: 100%;
+}
+#banner img{
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.modaldialog{
+    position: fixed;
+    font-family: 'Raleway',sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(181, 2, 2, 0.7);
+    z-index: 99999;      /*para preenchimento total da tela*/ 
+    opacity: 0;        /*propriedade que possibilita "esconder" o pop-ups*/
+    -webkit-transition: opacity 400ms ease-in;  /*indica o tempo da transiçãoda propriedade opcacity em 400ms para chrome e safari*/
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;  /*indica que ha transição*/
+    pointer-events: none;   /*inviabiliza o hover e cliques do mouse, usado aqui para permitir a interação com a pagina que ficou de baixo deste pop-up */
+    display: none;  /*desativa a exibição do elemento e carrega apagina como se le nao existisse*/
+}
+.modaldialog:target{
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+}
+.modaldialog .content{
+    width: 500px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+.modaldialog p{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: #2c2c2c;
+}
+.modaldialog .content .img{
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 2em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.close{
+    background-color: #606061;
+    color: #ffffff;
+    line-height: 25px;
+    position: absolute;
+    right: -15px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+}
+.close:hover{
+    background-color: #b50909;
+}
+
+footer{
+     width: 100%;
+     height: 18%;
+     background-color: #b50909;
+     color:#bbb;
+     position: relative;
+     float: left;
+     font-family: 'Raleway', sans-serif;    
+}
+footer .footer-text{
+    text-align: center;
+    width: 29%;
+    margin: 2%;
+    position: relative;
+    float: left;
+}
+footer .footer-text a{
+    color: whitesmoke;
+}
+
+.color-page{
+    background-color: #ddd;
+}
+
+.img-titulo{
+    width: 20%;
+    height: auto;
+    margin-bottom: 10px;
+    position: relative;
+    float: left;
+    margin-right: 5%;
+}
+.img-titulo img{
+    width: 90%;
+    margin-left: 17%;
+    margin-top: 15%;
+}
+
+#clientes-code {
+    width: 75%;
+    position: relative;
+    float: left;
+}
+.clientes-posi{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#clientes-code .config-clients{
+   width: 40%;
+   border-radius: 12px;
+   margin-left: 1.5%;
+   padding: 1em;
+   float: left; 
+   margin-bottom: 17px;
+   background-color: #fff;
+}
+#clientes-code .config-clients img{
+   width: 60%;
+   margin-left: 20%;
+   margin-bottom: 30px;
+   margin-top: 30px;
+}
+#clientes-code .config-clients p{
+    width: 90%;
+    margin-left: 5%;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#clientes-code .config-clients p a{
+    color: #111;
+    font-size: 0.7em;
+    text-decoration: none;
+}
+#clientes-code .config-clients p a:hover{
+    text-decoration: underline;
+    color: #3333aa;
+}
+
+#container-sobre{
+    width: 70%;
+    margin-left: 5%;
+    float: left;
+    position: relative;
+    height: 70%;
+    background-color: #fff;
+}
+#txt-sobre{
+    width: 50%;
+    float: left;
+    position: relative;
+    padding: 2em;
+    background-color: rgba(256, 256, 256, 0.4);
+    border-radius: 15px;
+    margin: 3%;
+}
+#txt-sobre p{
+    width: 100%;
+    position: relative;
+    float: left;
+
+}
+#txt-sobre dl{
+    width: 50%;
+}
+#img-cont-sobre{
+    width: 20%;
+    position: relative;
+    float: left;
+    margin-top: -23%;
+    padding: 1.5em;
+}
+#img-cont-sobre img{
+    width: 100%;
+    border-radius: 15px;
+    margin-left: 4%;
+}
+
+#txt-contato{
+    width: 100%;
+    height: 100%;
+}
+#txt-contato form{
+    width: 38%;
+    position: relative;
+    float: left;
+    background-color: #fff;
+    padding: 2%;
+    top: 8%;
+    min-height: 400px;
+    margin-left: 4em;
+    border-radius: 12px;
+} 
+#txt-contato form label{
+    font-weight: bold;
+}
+#txt-contato form input{
+    max-width: 100%;
+    width: 99%;
+    height: 35px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: solid #b50909 1px;
+    padding: 1%;
+    background-color: whitesmoke;
+    border-radius: 12px;
+}
+#txt-contato form textarea{
+    max-width: 100%;
+    width: 99%;
+    border: solid #b50909 1px;
+    padding-left: 1%;
+    min-height: 100px;
+    background-color: whitesmoke;
+    border-radius: 12px;
+}
+#txt-contato form button{
+    width: 30%;
+    height: auto;
+    cursor: pointer;
+    background-color: #b50909;
+    color: #fff;
+    font-size: 1.5em;
+    padding: 15px 0 15px 0;
+    margin-left: 35%;
+    margin-top: 2%;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 12px;
+}
+.info-code{
+    height: 40%;
+    width: 20%;
+    float: left;
+    margin-top: -26.5%;
+    background-color: whitesmoke;
+    border-radius: 12px;
+    text-align: center;
+    padding: 1em;
+    line-height: 2em;
+    margin-left: 1.5em;
+}

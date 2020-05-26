@@ -1,0 +1,57 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Code - Contato</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body class="color-page">
+    <div class="container-principal" id="topo">
+        <header>
+            <div class="logo">
+              <a href="index.html">
+                  <img src="imagens/logo.png" alt="Logo">
+              </a>
+            </div>
+        <nav>
+          <ul>
+              <li><a href="index.html">home</a></li>
+              <li><a href="clientes.html">clientes</a></li>
+              <li><a href="sobre.html">sobre</a></li>
+              <li><a href="#topo">contato</a></li>
+          </ul>
+      </nav>
+    </header>
+      <div class="img-titulo"> 
+           <img src="imagens/contato.png" alt="imagem de contato">
+     </div>  
+     <section id="txt-contato">
+         <form action="mailto:caiomralves.ca@gamil.com" name="meu_form" id="meu_form">
+             <p class="nome">
+                 <label for="nome">Nome:*</label><br>
+                 <input type="text" id="nomeid" placeholder="Ex: Antonio Estarque" required name="nome">
+             </p>
+             <p class="fone">
+                 <label for="fone">Fone:</label><br>
+                 <input type="phone" id="foneid" placeholder="(xx)xxxxx-xxxx" name="fone"/
+                 >
+             </p>
+             <p class="email">
+                 <label for="email">Email:*</label><br>
+                 <input type="email" id="emailid" placeholder="fulano@mail.com" name="email" required > 
+             </p>
+             <p>
+                 <textarea name="mensagem" id="form-msg" cols="35" rows="10" required placeholder="mensagem*"></textarea>
+             </p>
+             <button type="submit" form="meu_form">Enviar</button>
+         </form>
+     </section>
+     <div class="info-code">
+        <p><b>Endereço: </b><br>Avenida Novos Conhecidos n°2020</p>
+        <p><b>Telefone: </b><br>+55 14 99999-9999</p>
+        <p><b>E-mail: </b><br>contato@code.com.br</p>
+        <p><b>Redes Sociais: </b><br>Facebook: facebook.com\codedev</p>
+    </div>
+    </div>
+</body>
+</html>
