@@ -1,2 +1,2 @@
-# sitemodelo1
-site desenvolvido como exercicio de um curso sobre html&amp;css
+# website_template1
+# website developed as an exercise in an html and css course
